@@ -152,7 +152,7 @@
   }
   
   a {
-    color: #102A34;
+    color: #5fb3d4;
     text-decoration: none;
     background-color: transparent;
   }
@@ -362,13 +362,13 @@
   h1, h2, h3, h4, h5, h6,
   .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.2;
-    color: #343a40;
+    color: #a3bdd7;
   }
   
   h1, .h1 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   
   @media (max-width: 1200px) {
@@ -421,7 +421,7 @@
   }
   
   .display-1 {
-    font-size: 10rem;
+    font-size: 04rem;
     font-weight: 300;
     line-height: 1.2;
   }
@@ -2673,7 +2673,7 @@
   .btn-outline-primary:hover {
     color: #fff;
     background-color: #102A34;
-    border-color: #102A34;
+    border-color: #e0f1f8;
   }
   
   .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -4074,7 +4074,7 @@
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #102A34;
+    background-color: #b7d7e3;
   }
   
   .nav-fill > .nav-link,
@@ -4393,7 +4393,7 @@
   
   .navbar-light .navbar-toggler {
     color: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(245, 228, 228, 0.1);
   }
   
   .navbar-light .navbar-toggler-icon {
@@ -4741,7 +4741,7 @@
     padding: 0.5rem 0.75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #102A34;
+    color: #60b9dd;
     background-color: #fff;
     border: 1px solid #dee2e6;
   }
@@ -6634,7 +6634,7 @@
     }
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 468px) {
     .d-md-none {
       display: none !important;
     }
@@ -9525,11 +9525,11 @@
   }
   
   .text-primary {
-    color: #102A34 !important;
+    color: #fff !important;
   }
   
   a.text-primary:hover, a.text-primary:focus {
-    color: #078571 !important;
+    color: #f2f2f2 !important;
   }
   
   .text-secondary {
@@ -9581,7 +9581,7 @@
   }
   
   .text-dark {
-    color: #343a40 !important;
+    color: #f2f2f2!important;
   }
   
   a.text-dark:hover, a.text-dark:focus {
@@ -9715,7 +9715,7 @@
   /********** Template CSS ************/
   h1,
   .font-weight-bolder {
-    font-weight: 900 !important;
+    font-weight: 400 !important;
   }
   
   h2,
@@ -9800,10 +9800,11 @@
     font-weight: 500;
     outline: none;
   }
-  
+
+  /*hover del navbar*/
   .navbar-light .navbar-nav .nav-link:hover,
   .navbar-light .navbar-nav .nav-link.active {
-    color: #102A34;
+    color: #f2f2f2;
   }
   
   @media (max-width: 991.98px) {
@@ -9892,7 +9893,7 @@
     position: relative;
     padding: 0px;
   }
-  
+  /*no es nada*/
   #videoModal .close {
     position: absolute;
     width: 30px;
@@ -9902,8 +9903,8 @@
     z-index: 999;
     font-size: 30px;
     font-weight: normal;
-    color: #ffffff;
-    background: #000000;
+    color: #102A34;
+    background: #102A34;
     opacity: 1;
   }
   
@@ -9974,7 +9975,7 @@
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border-radius: 60px;
-    background: #102A34;
+    /*background: #102A34;*/
   }
   
   .contact-form .help-block ul {
@@ -9989,10 +9990,10 @@
   /* define variables for the color of the background and of the text 
   for the outline of the text and for the duration of the loading animation built with SVG assets */
   :root {
-    --color-background: #000;
+    --color-background: #0A0D13;
     --color-text: #033442;
     --stroke-size: 3px;
-    --animation-duration: 10s;
+    --animation-duration: 5s;
   }
   * {
     box-sizing: border-box;
@@ -10009,8 +10010,8 @@
   /* display items in a single column layout  */
   .container {
     display: flex;
-    height: 100vh;
-    width: 100%;
+    height: 90vh;
+    width: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -10065,7 +10066,7 @@
   /* to have only the outline of the text (its stroke), set its color to the color of the background and include solid text-shadows on either side */
   .container h1 {
     margin-top: 1.5rem;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     color: var(--color-background);
     text-transform: uppercase;
     text-shadow: 
@@ -10079,12 +10080,12 @@
   .container h1:before {
     content: '';
     position: absolute;
-  /*   offset by the size of the stroke  */
+  /*   offset by the size of the stroke -- animar mi nombre  */
     top: calc(var(--stroke-size)*-1);
     bottom: calc(var(--stroke-size)*-1);
     right: calc(var(--stroke-size)*-1);
     left: calc(var(--stroke-size)*-1);
-    background-color: var(--color-background);
+    background-color: #102A34;
     animation: loading-text-reveal var(--animation-duration) 2s linear forwards;
   }
   @keyframes loading-text-reveal {
@@ -10096,6 +10097,131 @@
   /* for smaller screen sizes reduce the size of the header */
   @media only screen and (max-width: 650px) {
     .container h1 {
+      font-size: 2.8rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+ 
+  
+  /* define variables for the color of the background and of the text 
+  for the outline of the text and for the duration of the loading animation built with SVG assets */
+  :root {
+   
+    --color-text: #033442;
+    --stroke-size: 3px;
+    --animation-duration: 10s;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    min-height: 100vh;
+    width: 100%;
+    /* use a font with a retro feel */
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--color-background);
+  }
+  /* display items in a single column layout  */
+  .container {
+    display: flex;
+    height: 90vh;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* nest the svg assets in a container occupying 80% of the viewport
+  position relative to absolute position its nested items */
+  .svg-assets {
+    display: inline-block;
+    width: 80vw;
+    position: relative;
+    
+  }
+  
+  /* position the pixellated oil barrel to the very left of the parent container 
+  use z-index to stack it on top of the other SVG asset */
+  .svg-assets .barrel-px {
+    height: 12rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+  }
+  
+  /* position the pixellated flame right next to the barrel, animate it to move across the screen and change in orientation when changing direction */
+  .svg-assets .flame-px {
+    width: 7rem;
+    position: absolute;
+    bottom: 0;
+    left: 3rem;
+    transform: rotateY(0);  
+    animation: move-around var(--animation-duration) 2s linear infinite;
+  }
+  @keyframes move-around {
+  
+    49% {
+      transform: rotateY(0);
+    }
+    50% {
+      left: 80%;
+      transform: rotateY(180deg);
+    }
+    99% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      left: 3rem;
+      transform: rotateY(0);
+    }
+  }
+  
+  /* to have only the outline of the text (its stroke), set its color to the color of the background and include solid text-shadows on either side */
+  .container h7 {
+    margin-top: 1.5rem;
+    font-size: 4.5rem;
+    color: var(--color-background);
+    text-transform: uppercase;
+    text-shadow: 
+      var(--stroke-size) var(--stroke-size) 0 var(--color-text),
+      calc(var(--stroke-size)*-1) var(--stroke-size) 0 var(--color-text),
+      var(--stroke-size) calc(var(--stroke-size)*-1) 0 var(--color-text),
+      calc(var(--stroke-size)*-1) calc(var(--stroke-size)*-1) 0 var(--color-text);
+    position: relative;
+  }
+  /* to animate the loading text position a solid background on top of it and animate it out of view */
+  .container h7:before {
+    content: '';
+    position: absolute;
+  /*   offset by the size of the stroke -- animar mi nombre  */
+    top: calc(var(--stroke-size)*-1);
+    bottom: calc(var(--stroke-size)*-1);
+    right: calc(var(--stroke-size)*-1);
+    left: calc(var(--stroke-size)*-1);
+    background-color: #0A0D13;
+    animation: loading-text-reveal var(--animation-duration) 2s linear forwards;
+  }
+  @keyframes loading-text-reveal {
+    to {
+      left: 100%;
+    }
+  }
+  
+  /* for smaller screen sizes reduce the size of the header */
+  @media only screen and (max-width: 650px) {
+    .container h7 {
       font-size: 2.8rem;
     }
   }
